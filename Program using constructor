@@ -1,0 +1,23 @@
+/* Program to print the names of students by creating a Student class.If no name is passed while creating an object of
+Student class,then the name should be "Unknown",otherwise the name should be equal to the String value passed while
+creating object of Student class.
+ */
+import java.util.Scanner;
+public class Student
+{ String name;
+  Student(){
+      name = "Unknown";
+  }
+  Student(String name){
+      this.name=name;
+  }
+}
+class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Student obj = new Student();
+        Student obj1 = new Student(sc.nextLine());
+        System.out.println(obj.name);
+        System.out.println(obj1.name);
+    }
+}
