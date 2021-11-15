@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Box {
+    int height;
+    int width;
+    int depth;
+    int vol;
+    Box(int height,int depth,int width){
+        this.height=height;
+        this.depth=depth;
+        this.width=width;
+    }
+    public int volume(){
+        vol=height*depth*width;
+        return vol;
+    }
+}
+class Main2{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Box obj = new Box(sc.nextInt(),sc.nextInt(),sc.nextInt());
+        int a = obj.volume();
+        System.out.println(a);
+
+
+    }
+}
